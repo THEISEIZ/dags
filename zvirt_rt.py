@@ -66,8 +66,8 @@ with DAG(
                         'jobs': json.dumps(source_config['jobs']),
                         'step': source_config['step'],
                         'hours': str(source_config['hours']),
-                        'start_date': source_config['start_date'],
-                        'end_date': source_config['end_date'],
+                        'start_date': "2025-11-15",
+                        'end_date': "2025-11-22",
                     },
                     env_from=[
                         k8s.V1EnvFromSource(secret_ref=k8s.V1SecretEnvSource("airflow-dag-clickhouse-connection")),
