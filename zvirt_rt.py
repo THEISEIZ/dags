@@ -14,7 +14,7 @@ from kubernetes.client import models as k8s
 DAG_DIR = Path(__file__).parent
 CONFIG_DIR = "configs"
 SOURCES_FILE_NAME = "zvirt_retro_config.yaml"
-SOURCE_CONFIG_FILE_PATH = DAG_DIR / CONFIG_DIR / SOURCES_FILE_NAME
+SOURCE_CONFIG_FILE_PATH = DAG_DIR / SOURCES_FILE_NAME
 
 
 default_args = {
