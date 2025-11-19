@@ -23,7 +23,7 @@ default_args = {
 
 
 with DAG(
-        'retro_zvirt__dag',
+        'retro_test_1',
         default_args=default_args,
         description='Забор ретро данных из Victoria Metrics для Zvirt',
         schedule_interval=None,
